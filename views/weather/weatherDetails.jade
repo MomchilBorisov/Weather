@@ -1,0 +1,58 @@
+extends ../layout
+
+block content
+    .main.container
+	.row
+		.col-xs-12
+			.col-xs-12.col-sm-6.col-sm-offset-3.col-lg-4.col-lg-offset-4.weather-panel
+				.col-xs-6
+					h2
+						| Lucerne
+						br
+						small May 24, 2016
+					p.h3
+						i.mi.mi-fw.mi-lg.mi-rain-heavy
+						|  Rainy
+				.col-xs-6.text-center
+					.h1.temperature
+						span 12°
+						br
+						small 8° / 13°
+				.col-xs-12
+					ul.list-inline.row.forecast
+						li.col-xs-4.col-sm-2.text-center
+							h3.h5 Wed
+							p
+								i.mi.mi-fw.mi-2x.mi-cloud-sun
+								br
+								| 9°/18°
+						li.col-xs-4.col-sm-2.text-center
+							h3.h5 Thu
+							p
+								i.mi.mi-fw.mi-2x.mi-sun
+								br
+								| 12°/23°
+						li.col-xs-4.col-sm-2.text-center
+							h3.h5 Fri
+							p
+								i.mi.mi-fw.mi-2x.mi-cloud-sun
+								br
+								| 14°/24°
+						li.col-xs-4.col-sm-2.text-center
+							h3.h5 Sat
+							p
+								i.mi.mi-fw.mi-2x.mi-rain
+								br
+								| 15°/23°
+						li.col-xs-4.col-sm-2.text-center
+							h3.h5 Sun
+							p
+								i.mi.mi-fw.mi-2x.mi-rain-heavy
+								br
+								| 15°/22°
+						li.col-xs-4.col-sm-2.text-center
+							h3.h5 Mon
+							p
+								i.mi.mi-fw.mi-2x.mi-clouds
+								br
+								| 12°/17°

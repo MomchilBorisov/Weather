@@ -1,0 +1,9 @@
+extends ../layout
+
+block content
+    h1 hello
+    form(action='/weather/weatherDetails' method='POST')
+        select.form-select(name='town' aria-label='Default select example')
+            each town in towns 
+                option(value='#{town.lat} #{town.lng}') #{town.city}
+        input(type='submit')
